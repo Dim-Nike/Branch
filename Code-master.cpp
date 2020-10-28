@@ -33,6 +33,14 @@ public:
 
 };
 
+void option() override
+	{
+		int c = x % y;
+		cout << x << "/" << y << "=" << c << endl;
+	}
+
+};
+
 class Print :public fin
 {
 public:
@@ -45,7 +53,9 @@ public:
 int main()
 {
 	sum sum(7,5);
+	interest interest(79,34);
 	Print v1;
 	v1.display(&sum);
+	v1.display(&interest);
 	return 0;
 }
