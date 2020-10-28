@@ -33,10 +33,22 @@ public:
 
 };
 
-void option() override
+class dif :public fin
+{
+private:
+	int x;
+	int y;
+public:
+	dif(int x, int y)
 	{
-		int c = x % y;
-		cout << x << "/" << y << "=" << c << endl;
+		this->x = x;
+		this->y = y;
+	}
+
+	void option() override
+	{
+		int c = x - y;
+		cout << x << "-" << y << "=" << c << endl;
 	}
 
 };
@@ -54,8 +66,11 @@ int main()
 {
 	sum sum(7,5);
 	interest interest(79,34);
+	dif dif(8,5);
 	Print v1;
 	v1.display(&sum);
 	v1.display(&interest);
+	v1.display(&dif);
+
 	return 0;
 }
