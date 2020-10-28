@@ -33,6 +33,19 @@ public:
 
 };
 
+class interest :public fin
+{
+private:
+	int x;
+	int y;
+public:
+	interest(int x, int y)
+	{
+		this->x = x;
+		this->y = y;
+	}
+
+
 void option() override
 	{
 		int c = x % y;
