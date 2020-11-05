@@ -96,6 +96,23 @@ class povv :public fin
 };
 
 
+class fact
+{
+	private:
+	int x;
+
+	public:
+	fact(x)
+	{
+	this->x=x;
+	}
+
+	void option() override
+	{
+	
+	}
+};
+
 class Print :public fin
 {
 public:
@@ -104,6 +121,8 @@ public:
 		foo->option();
 	}
 };
+
+
 
 int main()
 {
